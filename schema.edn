@@ -1,0 +1,239 @@
+{:category/categoryname      {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db/unique               :db.unique/identity
+                              :db.install/_attribute   :db.part/db}
+
+ :category/picture           {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :category/category          {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/description         {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/homepage            {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/region              {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/city                {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/address             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/companyname         {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/fax                 {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/contactname         {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/contacttitle        {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/postalcode          {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/phone               {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/country             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :global/quantity            {:db/valueType            :db.type/double
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipvia              {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/photo             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shippostalcode       {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/hiredate          {:db/valueType            :db.type/instant
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :product/quantityperunit    {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipaddress          {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/notes             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipname             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipcountry          {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/reportsto         {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/product            {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/unitsonorder       {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/discontinued       {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/requireddate         {:db/valueType :db.type/instant
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/unitprice          {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/freight              {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :orderdetails/discount      {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :territory/territory        {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :region/description         {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :employee/titleofcourtesy   {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/unitsinstock       {:db/valueType :db.type/long
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :employee/employee          {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :employee/birthdate         {:db/valueType :db.type/instant
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :person/lastname            {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/reorderlevel       {:db/valueType :db.type/long
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/order                {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :region/region              {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/shippeddate          {:db/valueType :db.type/instant
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :shipper/shipper            {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :person/phoneextension      {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :employee/photopath         {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/productname        {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :customer/customer          {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :territory/description      {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :demographics/customertype  {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :emographics/customerdesc   {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+
+ :person/homephone           {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :person/firstname           {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/shipregion           {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :supplier/supplier          {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/orderdate {:db/valueType :db.type/instant
+                   :db/cardinality :db.cardinality/one
+                   :db.install/_attribute :db.part/db}
+
+ :employee/title {:db/valueType :db.type/string
+                  :db/cardinality :db.cardinality/one
+                  :db.install/_attribute :db.part/db}
+
+
+
+ :order/shipcity {:db/valueType :db.type/string
+                  :db/cardinality :db.cardinality/one
+                  :db.install/_attribute :db.part/db}}
