@@ -1,17 +1,4 @@
-{:category/categoryname      {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db/unique               :db.unique/identity
-                              :db.install/_attribute   :db.part/db}
-
- :category/picture           {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
-
- :category/category          {:db/valueType            :db.type/ref
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
-
- :global/description         {:db/valueType            :db.type/string
+{:global/description         {:db/valueType            :db.type/string
                               :db/cardinality          :db.cardinality/one
                               :db.install/_attribute   :db.part/db}
 
@@ -63,45 +50,15 @@
                               :db/cardinality          :db.cardinality/one
                               :db.install/_attribute   :db.part/db}
 
- :order/shipvia              {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
 
- :employee/photo             {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
-
- :order/shippostalcode       {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
-
- :employee/hiredate          {:db/valueType            :db.type/instant
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
 
  :product/quantityperunit    {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
+                             :db/cardinality          :db.cardinality/one
+                             :db.install/_attribute   :db.part/db}
+ 
 
- :order/shipaddress          {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
 
- :employee/notes             {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
 
- :order/shipname             {:db/valueType            :db.type/string
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
-
- :order/shipcountry          {:db/valueType            :db.type/ref
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
-
- :employee/reportsto         {:db/valueType            :db.type/ref
-                              :db/cardinality          :db.cardinality/one
-                              :db.install/_attribute   :db.part/db}
 
  :product/product            {:db/valueType            :db.type/ref
                               :db/cardinality          :db.cardinality/one
@@ -132,28 +89,18 @@
                               :db.install/_attribute :db.part/db}
 
  :territory/territory        {:db/valueType :db.type/ref
-                              :db/cardinality :db.cardinality/one
+                              :db/cardinality :db.cardinality/many
                               :db.install/_attribute :db.part/db}
 
- :region/description         {:db/valueType :db.type/string
-                              :db/cardinality :db.cardinality/one
-                              :db.install/_attribute :db.part/db}
 
- :employee/titleofcourtesy   {:db/valueType :db.type/string
-                              :db/cardinality :db.cardinality/one
-                              :db.install/_attribute :db.part/db}
+
+
 
  :product/unitsinstock       {:db/valueType :db.type/long
                               :db/cardinality :db.cardinality/one
                               :db.install/_attribute :db.part/db}
 
- :employee/employee          {:db/valueType :db.type/ref
-                              :db/cardinality :db.cardinality/one
-                              :db.install/_attribute :db.part/db}
 
- :employee/birthdate         {:db/valueType :db.type/instant
-                              :db/cardinality :db.cardinality/one
-                              :db.install/_attribute :db.part/db}
 
  :person/lastname            {:db/valueType :db.type/string
                               :db/cardinality :db.cardinality/one
@@ -183,22 +130,13 @@
                               :db/cardinality :db.cardinality/one
                               :db.install/_attribute :db.part/db}
 
- :employee/photopath         {:db/valueType :db.type/string
-                              :db/cardinality :db.cardinality/one
-                              :db.install/_attribute :db.part/db}
+
 
  :product/productname        {:db/valueType :db.type/string
                               :db/cardinality :db.cardinality/one
                               :db.install/_attribute :db.part/db}
 
- :customer/customerid          {:db/valueType :db.type/string
-                                :db/cardinality :db.cardinality/one
-                                :db/unique               :db.unique/identity
-                                :db.install/_attribute :db.part/db}
- 
- :customer/customer          {:db/valueType :db.type/ref
-                              :db/cardinality :db.cardinality/one
-                              :db.install/_attribute :db.part/db}
+
 
  :territory/description      {:db/valueType :db.type/string
                               :db/cardinality :db.cardinality/one
@@ -225,17 +163,12 @@
                               :db/cardinality :db.cardinality/one
                               :db.install/_attribute :db.part/db}
 
- :supplier/supplier          {:db/valueType :db.type/ref
-                              :db/cardinality :db.cardinality/one
-                              :db.install/_attribute :db.part/db}
-
+ 
  :order/orderdate {:db/valueType :db.type/instant
                    :db/cardinality :db.cardinality/one
                    :db.install/_attribute :db.part/db}
 
- :employee/title {:db/valueType :db.type/string
-                  :db/cardinality :db.cardinality/one
-                  :db.install/_attribute :db.part/db}
+ 
 
 
 
