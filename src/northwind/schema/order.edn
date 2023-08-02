@@ -1,0 +1,20 @@
+{:order/shippostalcode       {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipaddress          {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipname             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipcountry          {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+ 
+  :order/shipvia              {:db/valueType            :db.type/string
+                              :db/cardinality           :db.cardinality/one
+                              :db.install/_attribute    :db.part/db}
+ }

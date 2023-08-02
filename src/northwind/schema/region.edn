@@ -1,0 +1,7 @@
+{:region/region              {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :region/description         {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}}

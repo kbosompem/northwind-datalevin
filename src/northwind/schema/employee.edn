@@ -1,0 +1,51 @@
+{:employee/employee          {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/title             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/photo             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/hiredate          {:db/valueType            :db.type/instant
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/notes             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/reportsto         {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/titleofcourtesy   {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/birthdate         {:db/valueType            :db.type/instant
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/photopath         {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/address           {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/homephone         {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/firstname         {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/lastname          {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}}
