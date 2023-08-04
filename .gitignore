@@ -12,3 +12,8 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .cpcache/
+/northwind/
+.calva/
+.clj-kondo/
+.lsp/
+/n1

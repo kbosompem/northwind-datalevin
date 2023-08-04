@@ -1,0 +1,39 @@
+{:product/product           {:db/valueType             :db.type/ref
+                             :db/cardinality           :db.cardinality/one
+                             :db.install/_attribute    :db.part/db}
+
+ :product/quantityperunit    {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :product/unitsonorder       {:db/valueType            :db.type/double
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :product/discontinued       {:db/valueType            :db.type/boolean
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :product/unitsinstock       {:db/valueType :db.type/long
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/productname        {:db/valueType :db.type/string
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/unitprice          {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/reorderlevel       {:db/valueType :db.type/long
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :product/category           {:db/valueType             :db.type/ref
+                              :db/cardinality           :db.cardinality/one
+                              :db.install/_attribute    :db.part/db}
+
+ :product/supplier          {:db/valueType             :db.type/ref
+                             :db/cardinality           :db.cardinality/one
+                             :db.install/_attribute    :db.part/db}}

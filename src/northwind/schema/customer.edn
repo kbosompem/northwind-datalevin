@@ -1,0 +1,51 @@
+{:customer/customer            {:db/valueType           :db.type/ref
+                                :db/cardinality         :db.cardinality/one
+                                :db.install/_attribute  :db.part/db}
+
+ :customer/customerid          {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db/unique               :db.unique/identity
+                                :db.install/_attribute   :db.part/db}
+
+ :customer/city                {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}
+ 
+ :customer/region              {:db/valueType            :db.type/string
+                                 :db/cardinality         :db.cardinality/one
+                                 :db.install/_attribute  :db.part/db}
+ 
+ :customer/address             {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}
+
+ :customer/companyname         {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}
+
+ :customer/fax                 {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}
+
+ :customer/contactname         {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}
+
+ :customer/contacttitle        {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}
+
+ :customer/postalcode          {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}
+
+ :customer/phone               {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}
+
+ :customer/country             {:db/valueType            :db.type/string
+                                :db/cardinality          :db.cardinality/one
+                                :db.install/_attribute   :db.part/db}}
+ 
+
+ 

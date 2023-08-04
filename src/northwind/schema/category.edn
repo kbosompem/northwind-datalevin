@@ -1,0 +1,16 @@
+{:category/category          {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+ 
+ :category/categoryname      {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db/unique               :db.unique/identity
+                              :db.install/_attribute   :db.part/db}
+
+ :category/picture           {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+ 
+ :category/description       {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}}

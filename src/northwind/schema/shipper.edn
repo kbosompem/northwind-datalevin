@@ -1,0 +1,12 @@
+{:shipper/shipper            {:db/valueType           :db.type/ref
+                              :db/cardinality         :db.cardinality/one
+                              :db.install/_attribute  :db.part/db}
+
+ :shipper/companyname        {:db/valueType           :db.type/string
+                              :db/unique              :db.unique/identity
+                              :db/cardinality         :db.cardinality/one
+                              :db.install/_attribute  :db.part/db}
+
+ :shipper/phone              {:db/valueType           :db.type/string
+                              :db/cardinality         :db.cardinality/one
+                              :db.install/_attribute  :db.part/db}}

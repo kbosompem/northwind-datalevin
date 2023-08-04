@@ -1,0 +1,47 @@
+{:supplier/supplier          {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/city              {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/address           {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/companyname       {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/fax               {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/contactname       {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/region           {:db/valueType             :db.type/string
+                             :db/cardinality          :db.cardinality/one
+                             :db.install/_attribute   :db.part/db}
+
+ :supplier/homepage          {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/contacttitle      {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/postalcode        {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :supplier/phone            {:db/valueType             :db.type/string
+                             :db/cardinality           :db.cardinality/one
+                             :db.install/_attribute    :db.part/db}
+
+ :supplier/country          {:db/valueType             :db.type/string
+                             :db/cardinality           :db.cardinality/one
+                             :db.install/_attribute    :db.part/db}}

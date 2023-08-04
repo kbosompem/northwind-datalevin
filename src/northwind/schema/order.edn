@@ -1,0 +1,55 @@
+{:order/order                {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/shippeddate          {:db/valueType :db.type/instant
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/shippostalcode       {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipaddress          {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipname             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipcountry          {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipvia              {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipregion           {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/orderdate            {:db/valueType            :db.type/instant
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/shipcity             {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/requireddate         {:db/valueType :db.type/instant
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :order/freight              {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+ 
+ :order/employee             {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :order/customer           {:db/valueType            :db.type/ref
+                             :db/cardinality          :db.cardinality/one
+                             :db.install/_attribute   :db.part/db}}
