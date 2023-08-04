@@ -1790,7 +1790,7 @@
   :product/unitsinstock 39
   :product/reorderlevel 10
   :product/productname "Chai"
-  :supplier/supplier -60001}
+  :product/supplier -60001}
  {:product/category  -10001
   :product/quantityperunit "24 - 12 oz bottles"
   :db/id  -40002
@@ -1800,7 +1800,7 @@
   :product/unitsinstock 17
   :product/reorderlevel 25
   :product/productname "Chang"
-  :supplier/supplier -60001}
+  :product/supplier -60001}
  {:product/category  -10002
   :product/quantityperunit "12 - 550 ml bottles"
   :db/id  -40003
@@ -1810,7 +1810,7 @@
   :product/unitsinstock 13
   :product/reorderlevel 25
   :product/productname "Aniseed Syrup"
-  :supplier/supplier -60001}
+  :product/supplier -60001}
  {:product/category  -10002
   :product/quantityperunit "48 - 6 oz jars"
   :db/id  -40004
@@ -1820,7 +1820,7 @@
   :product/unitsinstock 53
   :product/reorderlevel 0
   :product/productname "Chef Anton's Cajun Seasoning"
-  :supplier/supplier -60002}
+  :product/supplier -60002}
  {:product/category  -10002
   :product/quantityperunit "36 boxes"
   :db/id  -40005
@@ -1830,7 +1830,7 @@
   :product/unitsinstock 0
   :product/reorderlevel 0
   :product/productname "Chef Anton's Gumbo Mix"
-  :supplier/supplier -60002}
+  :product/supplier -60002}
  {:product/category  -10002
   :product/quantityperunit "12 - 8 oz jars"
   :db/id  -40006
@@ -1840,7 +1840,7 @@
   :product/unitsinstock 120
   :product/reorderlevel 25
   :product/productname "Grandma's Boysenberry Spread"
-  :supplier/supplier -60003}
+  :product/supplier -60003}
  {:product/category  -10007
   :product/quantityperunit "12 - 1 lb pkgs."
   :db/id  -40007
@@ -1850,7 +1850,7 @@
   :product/unitsinstock 15
   :product/reorderlevel 10
   :product/productname "Uncle Bob's Organic Dried Pears"
-  :supplier/supplier -60003}
+  :product/supplier -60003}
  {:product/category  -10002
   :product/quantityperunit "12 - 12 oz jars"
   :db/id  -40008
@@ -1860,7 +1860,7 @@
   :product/unitsinstock 6
   :product/reorderlevel 0
   :product/productname "Northwoods Cranberry Sauce"
-  :supplier/supplier -60003}
+  :product/supplier -60003}
  {:product/category  -10006
   :product/quantityperunit "18 - 500 g pkgs."
   :db/id  -40009
@@ -1870,7 +1870,7 @@
   :product/unitsinstock 29
   :product/reorderlevel 0
   :product/productname "Mishi Kobe Niku"
-  :supplier/supplier -60004}
+  :product/supplier -60004}
  {:product/category  -10008
   :product/quantityperunit "12 - 200 ml jars"
   :db/id  -40010
@@ -1880,7 +1880,7 @@
   :product/unitsinstock 31
   :product/reorderlevel 0
   :product/productname "Ikura"
-  :supplier/supplier -60004}
+  :product/supplier -60004}
  {:product/category  -10004
   :product/quantityperunit "1 kg pkg."
   :db/id  -40011
@@ -1890,7 +1890,7 @@
   :product/unitsinstock 22
   :product/reorderlevel 30
   :product/productname "Queso Cabrales"
-  :supplier/supplier -60005}
+  :product/supplier -60005}
  {:product/category  -10004
   :product/quantityperunit "10 - 500 g pkgs."
   :db/id  -40012
@@ -1900,7 +1900,7 @@
   :product/unitsinstock 86
   :product/reorderlevel 0
   :product/productname "Queso Manchego La Pastora"
-  :supplier/supplier -60005}
+  :product/supplier -60005}
  {:product/category  -10008
   :product/quantityperunit "2 kg box"
   :db/id  -40013
@@ -1910,7 +1910,7 @@
   :product/unitsinstock 24
   :product/reorderlevel 5
   :product/productname "Konbu"
-  :supplier/supplier -60006}
+  :product/supplier -60006}
  {:product/category  -10007
   :product/quantityperunit "40 - 100 g pkgs."
   :db/id  -40014
@@ -1920,7 +1920,7 @@
   :product/unitsinstock 35
   :product/reorderlevel 0
   :product/productname "Tofu"
-  :supplier/supplier -60006}
+  :product/supplier -60006}
  {:product/category  -10002
   :product/quantityperunit "24 - 250 ml bottles"
   :db/id  -40015
@@ -1930,7 +1930,7 @@
   :product/unitsinstock 39
   :product/reorderlevel 5
   :product/productname "Genen Shouyu"
-  :supplier/supplier -60006}
+  :product/supplier -60006}
  {:product/category  -10003
   :product/quantityperunit "32 - 500 g boxes"
   :db/id  -40016
@@ -1940,7 +1940,7 @@
   :product/unitsinstock 29
   :product/reorderlevel 10
   :product/productname "Pavlova"
-  :supplier/supplier -60007}
+  :product/supplier -60007}
  {:product/category  -10006
   :product/quantityperunit "20 - 1 kg tins"
   :db/id  -40017
@@ -1950,7 +1950,7 @@
   :product/unitsinstock 0
   :product/reorderlevel 0
   :product/productname "Alice Mutton"
-  :supplier/supplier -60007}
+  :product/supplier -60007}
  {:product/category  -10008
   :product/quantityperunit "16 kg pkg."
   :db/id  -40018
@@ -1960,7 +1960,7 @@
   :product/unitsinstock 42
   :product/reorderlevel 0
   :product/productname "Carnarvon Tigers"
-  :supplier/supplier -60007}
+  :product/supplier -60007}
  {:product/category  -10003
   :product/quantityperunit "10 boxes x 12 pieces"
   :db/id  -40019
@@ -1970,7 +1970,7 @@
   :product/unitsinstock 25
   :product/reorderlevel 5
   :product/productname "Teatime Chocolate Biscuits"
-  :supplier/supplier -60008}
+  :product/supplier -60008}
  {:product/category  -10003
   :product/quantityperunit "30 gift boxes"
   :db/id  -40020
@@ -1980,7 +1980,7 @@
   :product/unitsinstock 40
   :product/reorderlevel 0
   :product/productname "Sir Rodney's Marmalade"
-  :supplier/supplier -60008}
+  :product/supplier -60008}
  {:product/category  -10003
   :product/quantityperunit "24 pkgs. x 4 pieces"
   :db/id  -40021
@@ -1990,7 +1990,7 @@
   :product/unitsinstock 3
   :product/reorderlevel 5
   :product/productname "Sir Rodney's Scones"
-  :supplier/supplier -60008}
+  :product/supplier -60008}
  {:product/category  -10005
   :product/quantityperunit "24 - 500 g pkgs."
   :db/id  -40022
@@ -2000,7 +2000,7 @@
   :product/unitsinstock 104
   :product/reorderlevel 25
   :product/productname "Gustaf's Knäckebröd"
-  :supplier/supplier -60009}
+  :product/supplier -60009}
  {:product/category  -10005
   :product/quantityperunit "12 - 250 g pkgs."
   :db/id  -40023
@@ -2010,7 +2010,7 @@
   :product/unitsinstock 61
   :product/reorderlevel 25
   :product/productname "Tunnbröd"
-  :supplier/supplier -60009}
+  :product/supplier -60009}
  {:product/category  -10001
   :product/quantityperunit "12 - 355 ml cans"
   :db/id  -40024
@@ -2020,7 +2020,7 @@
   :product/unitsinstock 20
   :product/reorderlevel 0
   :product/productname "Guaraná Fantástica"
-  :supplier/supplier -60010}
+  :product/supplier -60010}
  {:product/category  -10003
   :product/quantityperunit "20 - 450 g glasses"
   :db/id  -40025
@@ -2030,7 +2030,7 @@
   :product/unitsinstock 76
   :product/reorderlevel 30
   :product/productname "NuNuCa Nuß-Nougat-Creme"
-  :supplier/supplier -60011}
+  :product/supplier -60011}
  {:product/category  -10003
   :product/quantityperunit "100 - 250 g bags"
   :db/id  -40026
@@ -2040,7 +2040,7 @@
   :product/unitsinstock 15
   :product/reorderlevel 0
   :product/productname "Gumbär Gummibärchen"
-  :supplier/supplier -60011}
+  :product/supplier -60011}
  {:product/category  -10003
   :product/quantityperunit "100 - 100 g pieces"
   :db/id  -40027
@@ -2050,7 +2050,7 @@
   :product/unitsinstock 49
   :product/reorderlevel 30
   :product/productname "Schoggi Schokolade"
-  :supplier/supplier -60011}
+  :product/supplier -60011}
  {:product/category  -10007
   :product/quantityperunit "25 - 825 g cans"
   :db/id  -40028
@@ -2060,7 +2060,7 @@
   :product/unitsinstock 26
   :product/reorderlevel 0
   :product/productname "Rössle Sauerkraut"
-  :supplier/supplier -60012}
+  :product/supplier -60012}
  {:product/category  -10006
   :product/quantityperunit "50 bags x 30 sausgs."
   :db/id  -40029
@@ -2070,7 +2070,7 @@
   :product/unitsinstock 0
   :product/reorderlevel 0
   :product/productname "Thüringer Rostbratwurst"
-  :supplier/supplier -60012}
+  :product/supplier -60012}
  {:product/category  -10008
   :product/quantityperunit "10 - 200 g glasses"
   :db/id  -40030
@@ -2080,7 +2080,7 @@
   :product/unitsinstock 10
   :product/reorderlevel 15
   :product/productname "Nord-Ost Matjeshering"
-  :supplier/supplier -60013}
+  :product/supplier -60013}
  {:product/category  -10004
   :product/quantityperunit "12 - 100 g pkgs"
   :db/id  -40031
@@ -2090,7 +2090,7 @@
   :product/unitsinstock 0
   :product/reorderlevel 20
   :product/productname "Gorgonzola Telino"
-  :supplier/supplier -60014}
+  :product/supplier -60014}
  {:product/category  -10004
   :product/quantityperunit "24 - 200 g pkgs."
   :db/id  -40032
@@ -2100,7 +2100,7 @@
   :product/unitsinstock 9
   :product/reorderlevel 25
   :product/productname "Mascarpone Fabioli"
-  :supplier/supplier -60014}
+  :product/supplier -60014}
  {:product/category  -10004
   :product/quantityperunit "500 g"
   :db/id  -40033
@@ -2110,7 +2110,7 @@
   :product/unitsinstock 112
   :product/reorderlevel 20
   :product/productname "Geitost"
-  :supplier/supplier -60015}
+  :product/supplier -60015}
  {:product/category  -10001
   :product/quantityperunit "24 - 12 oz bottles"
   :db/id  -40034
@@ -2120,7 +2120,7 @@
   :product/unitsinstock 111
   :product/reorderlevel 15
   :product/productname "Sasquatch Ale"
-  :supplier/supplier -60016}
+  :product/supplier -60016}
  {:product/category  -10001
   :product/quantityperunit "24 - 12 oz bottles"
   :db/id  -40035
@@ -2130,7 +2130,7 @@
   :product/unitsinstock 20
   :product/reorderlevel 15
   :product/productname "Steeleye Stout"
-  :supplier/supplier -60016}
+  :product/supplier -60016}
  {:product/category  -10008
   :product/quantityperunit "24 - 250 g  jars"
   :db/id  -40036
@@ -2140,7 +2140,7 @@
   :product/unitsinstock 112
   :product/reorderlevel 20
   :product/productname "Inlagd Sill"
-  :supplier/supplier -60017}
+  :product/supplier -60017}
  {:product/category  -10008
   :product/quantityperunit "12 - 500 g pkgs."
   :db/id  -40037
@@ -2150,7 +2150,7 @@
   :product/unitsinstock 11
   :product/reorderlevel 25
   :product/productname "Gravad lax"
-  :supplier/supplier -60017}
+  :product/supplier -60017}
  {:product/category  -10001
   :product/quantityperunit "12 - 75 cl bottles"
   :db/id  -40038
@@ -2160,7 +2160,7 @@
   :product/unitsinstock 17
   :product/reorderlevel 15
   :product/productname "Côte de Blaye"
-  :supplier/supplier -60018}
+  :product/supplier -60018}
  {:product/category  -10001
   :product/quantityperunit "750 cc per bottle"
   :db/id  -40039
@@ -2170,7 +2170,7 @@
   :product/unitsinstock 69
   :product/reorderlevel 5
   :product/productname "Chartreuse verte"
-  :supplier/supplier -60018}
+  :product/supplier -60018}
  {:product/category  -10008
   :product/quantityperunit "24 - 4 oz tins"
   :db/id  -40040
@@ -2180,7 +2180,7 @@
   :product/unitsinstock 123
   :product/reorderlevel 30
   :product/productname "Boston Crab Meat"
-  :supplier/supplier -60019}
+  :product/supplier -60019}
  {:product/category  -10008
   :product/quantityperunit "12 - 12 oz cans"
   :db/id  -40041
@@ -2190,7 +2190,7 @@
   :product/unitsinstock 85
   :product/reorderlevel 10
   :product/productname "Jack's New England Clam Chowder"
-  :supplier/supplier -60019}
+  :product/supplier -60019}
  {:product/category  -10005
   :product/quantityperunit "32 - 1 kg pkgs."
   :db/id  -40042
@@ -2200,7 +2200,7 @@
   :product/unitsinstock 26
   :product/reorderlevel 0
   :product/productname "Singaporean Hokkien Fried Mee"
-  :supplier/supplier -60020}
+  :product/supplier -60020}
  {:product/category  -10001
   :product/quantityperunit "16 - 500 g tins"
   :db/id  -40043
@@ -2210,7 +2210,7 @@
   :product/unitsinstock 17
   :product/reorderlevel 25
   :product/productname "Ipoh Coffee"
-  :supplier/supplier -60020}
+  :product/supplier -60020}
  {:product/category  -10002
   :product/quantityperunit "20 - 2 kg bags"
   :db/id  -40044
@@ -2220,7 +2220,7 @@
   :product/unitsinstock 27
   :product/reorderlevel 15
   :product/productname "Gula Malacca"
-  :supplier/supplier -60020}
+  :product/supplier -60020}
  {:product/category  -10008
   :product/quantityperunit "1k pkg."
   :db/id  -40045
@@ -2230,7 +2230,7 @@
   :product/unitsinstock 5
   :product/reorderlevel 15
   :product/productname "Rogede sild"
-  :supplier/supplier -60021}
+  :product/supplier -60021}
  {:product/category  -10008
   :product/quantityperunit "4 - 450 g glasses"
   :db/id  -40046
@@ -2240,7 +2240,7 @@
   :product/unitsinstock 95
   :product/reorderlevel 0
   :product/productname "Spegesild"
-  :supplier/supplier -60021}
+  :product/supplier -60021}
  {:product/category  -10003
   :product/quantityperunit "10 - 4 oz boxes"
   :db/id  -40047
@@ -2250,7 +2250,7 @@
   :product/unitsinstock 36
   :product/reorderlevel 0
   :product/productname "Zaanse koeken"
-  :supplier/supplier -60022}
+  :product/supplier -60022}
  {:product/category  -10003
   :product/quantityperunit "10 pkgs."
   :db/id  -40048
@@ -2260,7 +2260,7 @@
   :product/unitsinstock 15
   :product/reorderlevel 25
   :product/productname "Chocolade"
-  :supplier/supplier -60022}
+  :product/supplier -60022}
  {:product/category  -10003
   :product/quantityperunit "24 - 50 g pkgs."
   :db/id  -40049
@@ -2270,7 +2270,7 @@
   :product/unitsinstock 10
   :product/reorderlevel 15
   :product/productname "Maxilaku"
-  :supplier/supplier -60023}
+  :product/supplier -60023}
  {:product/category  -10003
   :product/quantityperunit "12 - 100 g bars"
   :db/id  -40050
@@ -2280,7 +2280,7 @@
   :product/unitsinstock 65
   :product/reorderlevel 30
   :product/productname "Valkoinen suklaa"
-  :supplier/supplier -60023}
+  :product/supplier -60023}
  {:product/category  -10007
   :product/quantityperunit "50 - 300 g pkgs."
   :db/id  -40051
@@ -2290,7 +2290,7 @@
   :product/unitsinstock 20
   :product/reorderlevel 10
   :product/productname "Manjimup Dried Apples"
-  :supplier/supplier -60024}
+  :product/supplier -60024}
  {:product/category  -10005
   :product/quantityperunit "16 - 2 kg boxes"
   :db/id  -40052
@@ -2300,7 +2300,7 @@
   :product/unitsinstock 38
   :product/reorderlevel 25
   :product/productname "Filo Mix"
-  :supplier/supplier -60024}
+  :product/supplier -60024}
  {:product/category  -10006
   :product/quantityperunit "48 pieces"
   :db/id  -40053
@@ -2310,7 +2310,7 @@
   :product/unitsinstock 0
   :product/reorderlevel 0
   :product/productname "Perth Pasties"
-  :supplier/supplier -60024}
+  :product/supplier -60024}
  {:product/category  -10006
   :product/quantityperunit "16 pies"
   :db/id  -40054
@@ -2320,7 +2320,7 @@
   :product/unitsinstock 21
   :product/reorderlevel 10
   :product/productname "Tourtière"
-  :supplier/supplier -60025}
+  :product/supplier -60025}
  {:product/category  -10006
   :product/quantityperunit "24 boxes x 2 pies"
   :db/id  -40055
@@ -2330,7 +2330,7 @@
   :product/unitsinstock 115
   :product/reorderlevel 20
   :product/productname "Pâté chinois"
-  :supplier/supplier -60025}
+  :product/supplier -60025}
  {:product/category  -10005
   :product/quantityperunit "24 - 250 g pkgs."
   :db/id  -40056
@@ -2340,7 +2340,7 @@
   :product/unitsinstock 21
   :product/reorderlevel 30
   :product/productname "Gnocchi di nonna Alice"
-  :supplier/supplier -60026}
+  :product/supplier -60026}
  {:product/category  -10005
   :product/quantityperunit "24 - 250 g pkgs."
   :db/id  -40057
@@ -2350,7 +2350,7 @@
   :product/unitsinstock 36
   :product/reorderlevel 20
   :product/productname "Ravioli Angelo"
-  :supplier/supplier -60026}
+  :product/supplier -60026}
  {:product/category  -10008
   :product/quantityperunit "24 pieces"
   :db/id  -40058
@@ -2360,7 +2360,7 @@
   :product/unitsinstock 62
   :product/reorderlevel 20
   :product/productname "Escargots de Bourgogne"
-  :supplier/supplier -60027}
+  :product/supplier -60027}
  {:product/category  -10004
   :product/quantityperunit "5 kg pkg."
   :db/id  -40059
@@ -2370,7 +2370,7 @@
   :product/unitsinstock 79
   :product/reorderlevel 0
   :product/productname "Raclette Courdavault"
-  :supplier/supplier -60028}
+  :product/supplier -60028}
  {:product/category  -10004
   :product/quantityperunit "15 - 300 g rounds"
   :db/id  -40060
@@ -2380,7 +2380,7 @@
   :product/unitsinstock 19
   :product/reorderlevel 0
   :product/productname "Camembert Pierrot"
-  :supplier/supplier -60028}
+  :product/supplier -60028}
  {:product/category  -10002
   :product/quantityperunit "24 - 500 ml bottles"
   :db/id  -40061
@@ -2390,7 +2390,7 @@
   :product/unitsinstock 113
   :product/reorderlevel 25
   :product/productname "Sirop d'érable"
-  :supplier/supplier -60029}
+  :product/supplier -60029}
  {:product/category  -10003
   :product/quantityperunit "48 pies"
   :db/id  -40062
@@ -2400,7 +2400,7 @@
   :product/unitsinstock 17
   :product/reorderlevel 0
   :product/productname "Tarte au sucre"
-  :supplier/supplier -60029}
+  :product/supplier -60029}
  {:product/category  -10002
   :product/quantityperunit "15 - 625 g jars"
   :db/id  -40063
@@ -2410,7 +2410,7 @@
   :product/unitsinstock 24
   :product/reorderlevel 5
   :product/productname "Vegie-spread"
-  :supplier/supplier -60007}
+  :product/supplier -60007}
  {:product/category  -10005
   :product/quantityperunit "20 bags x 4 pieces"
   :db/id  -40064
@@ -2420,7 +2420,7 @@
   :product/unitsinstock 22
   :product/reorderlevel 30
   :product/productname "Wimmers gute Semmelknödel"
-  :supplier/supplier -60012}
+  :product/supplier -60012}
  {:product/category  -10002
   :product/quantityperunit "32 - 8 oz bottles"
   :db/id  -40065
@@ -2430,7 +2430,7 @@
   :product/unitsinstock 76
   :product/reorderlevel 0
   :product/productname "Louisiana Fiery Hot Pepper Sauce"
-  :supplier/supplier -60002}
+  :product/supplier -60002}
  {:product/category  -10002
   :product/quantityperunit "24 - 8 oz jars"
   :db/id  -40066
@@ -2440,7 +2440,7 @@
   :product/unitsinstock 4
   :product/reorderlevel 20
   :product/productname "Louisiana Hot Spiced Okra"
-  :supplier/supplier -60002}
+  :product/supplier -60002}
  {:product/category  -10001
   :product/quantityperunit "24 - 12 oz bottles"
   :db/id  -40067
@@ -2450,7 +2450,7 @@
   :product/unitsinstock 52
   :product/reorderlevel 10
   :product/productname "Laughing Lumberjack Lager"
-  :supplier/supplier -60016}
+  :product/supplier -60016}
  {:product/category  -10003
   :product/quantityperunit "10 boxes x 8 pieces"
   :db/id  -40068
@@ -2460,7 +2460,7 @@
   :product/unitsinstock 6
   :product/reorderlevel 15
   :product/productname "Scottish Longbreads"
-  :supplier/supplier -60008}
+  :product/supplier -60008}
  {:product/category  -10004
   :product/quantityperunit "10 kg pkg."
   :db/id  -40069
@@ -2470,7 +2470,7 @@
   :product/unitsinstock 26
   :product/reorderlevel 15
   :product/productname "Gudbrandsdalsost"
-  :supplier/supplier -60015}
+  :product/supplier -60015}
  {:product/category  -10001
   :product/quantityperunit "24 - 355 ml bottles"
   :db/id  -40070
@@ -2480,7 +2480,7 @@
   :product/unitsinstock 15
   :product/reorderlevel 30
   :product/productname "Outback Lager"
-  :supplier/supplier -60007}
+  :product/supplier -60007}
  {:product/category  -10004
   :product/quantityperunit "10 - 500 g pkgs."
   :db/id  -40071
@@ -2490,7 +2490,7 @@
   :product/unitsinstock 26
   :product/reorderlevel 0
   :product/productname "Flotemysost"
-  :supplier/supplier -60015}
+  :product/supplier -60015}
  {:product/category  -10004
   :product/quantityperunit "24 - 200 g pkgs."
   :db/id  -40072
@@ -2500,7 +2500,7 @@
   :product/unitsinstock 14
   :product/reorderlevel 0
   :product/productname "Mozzarella di Giovanni"
-  :supplier/supplier -60014}
+  :product/supplier -60014}
  {:product/category  -10008
   :product/quantityperunit "24 - 150 g jars"
   :db/id  -40073
@@ -2510,7 +2510,7 @@
   :product/unitsinstock 101
   :product/reorderlevel 5
   :product/productname "Röd Kaviar"
-  :supplier/supplier -60017}
+  :product/supplier -60017}
  {:product/category  -10007
   :product/quantityperunit "5 kg pkg."
   :db/id  -40074
@@ -2520,7 +2520,7 @@
   :product/unitsinstock 4
   :product/reorderlevel 5
   :product/productname "Longlife Tofu"
-  :supplier/supplier -60004}
+  :product/supplier -60004}
  {:product/category  -10001
   :product/quantityperunit "24 - 0.5 l bottles"
   :db/id  -40075
@@ -2530,7 +2530,7 @@
   :product/unitsinstock 125
   :product/reorderlevel 25
   :product/productname "Rhönbräu Klosterbier"
-  :supplier/supplier -60012}
+  :product/supplier -60012}
  {:product/category  -10001
   :product/quantityperunit "500 ml"
   :db/id  -40076
@@ -2540,7 +2540,7 @@
   :product/unitsinstock 57
   :product/reorderlevel 20
   :product/productname "Lakkalikööri"
-  :supplier/supplier -60023}
+  :product/supplier -60023}
  {:product/category  -10002
   :product/quantityperunit "12 boxes"
   :db/id  -40077
@@ -2550,7 +2550,7 @@
   :product/unitsinstock 32
   :product/reorderlevel 15
   :product/productname "Original Frankfurter grüne Soße"
-  :supplier/supplier -60012}
+  :product/supplier -60012}
  {:order/shipvia "3"
   :order/shippostalcode "51100"
   :order/shipaddress "59 rue de l'Abbaye"
