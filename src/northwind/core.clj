@@ -1,36 +1,72 @@
 (ns northwind.core
+  (:refer-clojure :exclude [load])
   (:require [pod.huahaiy.datalevin :as d]
             [clojure.pprint :as pp])
-  (:import [java.util Calendar]))
+  ;(:import [java.util Calendar])
+  )
 
-
-; -- Delete DB
-(.delete (java.io.File. "n1/data.mdb"))
-(.delete (java.io.File. "n1/lock.mdb"))
-
-(def northwind-schema (read-string (slurp "src/northwind/schema/schema.edn")))
-
-(def conn (d/get-conn "n1" northwind-schema))
-
-(def db (d/db conn))
-
-(def northwind-data (read-string (slurp "data.edn")))
-
-(d/transact! conn northwind-data)
-
-; -- UTILITY FUNCTIONS 
-(defn get-year [dt]
-  (let [cal (Calendar/getInstance)
-        _ (.setTime cal dt)]
-    (.get cal Calendar/YEAR)))
-
-(def pt pp/print-table)
-
-; -- QUERIES 
 ; -- https://www.geeksengine.com/database/problem-solving/northwind-queries-part-1.php
 ; -- https://neo4j.com/graphgists/northwind-recommendation-engine/
 
-(defn order-subtotals 
+
+; --- INITIALIZATION ----------------------------------------------------------
+; -----------------------------------------------------------------------------
+
+(doseq [f ["n1/data.mdb" "n1/lock.mdb"]]
+  (.delete (java.io.File. f)))
+
+(def schema (read-string (slurp "src/northwind/schema/schema.edn")))
+
+(def conn (d/get-conn "n1" schema))
+
+(def db (d/db conn))
+
+(def data (read-string (slurp "data.edn")))
+
+(d/transact! conn data)
+
+
+; --- UTILITY FUNCTIONS--------------------------------------------------------
+; -----------------------------------------------------------------------------
+
+#_(defn get-year
+    "Datalevin uses java.util.date so to get the year 
+   I need to convert to Instance and use the Calendar methods"
+    [dt]
+    (let [cal (Calendar/getInstance)
+          _ (.setTime cal dt)]
+      (.get cal Calendar/YEAR)))
+
+(def pt
+  "Print seq of maps as an ascii table"
+  pp/print-table)
+
+; --- RULES -------------------------------------------------------------------
+; -----------------------------------------------------------------------------
+
+(def purchased-too
+  '[[(purchase-too ?od1 ?od2)
+     [?od1 :orderdetail/product ?p]
+     [?od2 :orderdetail/product ?p]
+     [?od1 :orderdetail/order ?o1]
+     [?od2 :orderdetail/order ?o2]
+     [(not= ?od1 ?od2)]]])
+
+(def order-products
+  '[[(order-product ?o ?p)
+     [?od1 :orderdetail/order ?o]
+     [?od1 :orderdetail/product ?p]]])
+
+(def order-detail-customer
+  '[[(order-detail-customer ?od1 ?cid)
+     [?od1 :orderdetail/order ?o]
+     [?o :order/customer ?c]
+     [?c :customer/customerid ?cid]]])
+
+; --- QUERIES------------------------------------------------------------------
+; -----------------------------------------------------------------------------
+
+(defn order-subtotals
   "Order SubTotals
    
    (pt (sort-by :orderid (order-subtotals)))"
@@ -73,50 +109,12 @@
               [?p :product/productname ?pn]
               [?p :product/supplier ?s]
               [?s :supplier/companyname ?c]] db)
-       (sort-by :orders > )
+       (sort-by :orders >)
        (take 5)))
 
-(def purchased-too
-  '[[(purchase-too ?od1 ?od2)
-    [?od1 :orderdetail/product ?p]
-    [?od2 :orderdetail/product ?p]
-    [?od1 :orderdetail/order ?o1]
-    [?od2 :orderdetail/order ?o2]
-    [(not= ?od1 ?od2)]]])
-
-(def order-products
-  '[[(order-product ?od1 ?o ?p ?pn)
-     [?od1 :orderdetail/order ?o]
-     [?od1 :orderdetail/product ?p]
-     [?p :product/productname ?pn]]])
-
-(def order-detail-customer
-  '[[(order-detail-customer ?od1 ?cid)
-     [?od1 :orderdetail/order ?o]
-     [?o :order/customer ?c]
-     [?c :customer/customerid ?cid]]])
-
-(time (sort-by :orders > (d/q '[:find ?p ?pn (count ?o)
-       :keys pid product orders
-       :in $ %
-       :where
-       (purchase-too ?od1 ?od2)
-       [?od1 :orderdetail/order ?o]
-       [?od1 :orderdetail/product ?p]
-       [?p :product/productname ?pn]]
-     db purchased-too)))
-
-(time (sort-by :orders >
-               (d/q '[:find ?p ?pn (count ?o)
-                      :keys pid product orders
-                      :in $ ?cid %
-                      :where
-                      (order-detail-customer ?od1 ?cid)
-                      (purchase-too ?od1 ?od2)
-                      (order-product ?od1 ?o ?p ?pn)]
-                    db "ANTON" (into purchased-too (into order-detail-customer order-products)))))
-
-(defn get-recommendations 
+(defn get-recommendations
+  "Can't figure this out!
+   Its supposed to return the most ordered items by customers who ordered the same itemss"
   [custid]
   (d/q '[:find ?c ?pn (count ?o)
          :keys  companyname productname  orders
@@ -127,10 +125,13 @@
          [?p :product/supplier ?s]
          [?s :supplier/companyname ?c]] db))
 
-(defn total-cost [unit-price quantity]
-  (Math/ (* unit-price quantity) 2))
+(defn total-cost
+  "Compute the total cost for an ordered product."
+  [unit-price quantity]
+  (* unit-price quantity))
 
 (defn get-purchased
+  "Get list of purchased items"
   [custid]
   (d/q '[:find ?pid ?product (min ?u) (max ?u) (count ?o) (sum ?q) (sum ?tc)
          :keys pid product min-up max-up orders quantities totalcost
@@ -145,9 +146,10 @@
          [?pid :product/productname ?product]]
        db custid))
 
-(pt (get-purchased "ANTON"))
+
 
 (defn not-purchased
+  "this is wrong."
   [custid]
   (d/q '[:find ?pid ?product
          :keys pid product
@@ -160,11 +162,48 @@
          [(not= ?cid ?cid2)]]
        db custid))
 
-(pt (sort-by :pid (not-purchased "ANTON")))
+(defn orders-by-customer
+  [& a]
+  (sort-by :orders >
+           (cond
+             a  (d/q '[:find ?cid (count ?o)
+                       :keys cid orders
+                       :in $ [?cid ...]
+                       :where [?o :order/customer ?c]
+                       [?c :customer/customerid ?cid]]
+                     db a)
+             :else (d/q '[:find ?cid (count ?o)
+                          :keys cid orders
+                          :where [?o :order/customer ?c]
+                          [?c :customer/customerid ?cid]]
+                        db))))
 
+(pt (popular-products))
 (comment
+  (pt (sort-by :orders > (orders-by-customer)))
+  (pt (get-purchased "ANTON"))
+  (pt (get-purchased "SAVEA"))
+  (pt (sort-by :pid (not-purchased "ANTON")))
+  (time (sort-by :orders > (d/q '[:find ?p ?pn (count ?o)
+                                  :keys pid product orders
+                                  :in $ %
+                                  :where
+                                  (purchase-too ?od1 ?od2)
+                                  [?od1 :orderdetail/order ?o]
+                                  [?od1 :orderdetail/product ?p]
+                                  [?p :product/productname ?pn]]
+                                db purchased-too)))
 
-  
+  (time (sort-by :orders >
+                 (d/q '[:find ?p ?pn (count ?o)
+                        :keys pid product orders
+                        :in $ ?cid %
+                        :where
+                        (order-detail-customer ?od1 ?cid)
+                        (purchase-too ?od1 ?od2)
+                        (order-product ?od1 ?o ?p ?pn)]
+                      db "ANTON" (into purchased-too (into order-detail-customer order-products)))))
+
   (pt (sort-by :orderid (order-subtotals)))
   (pt (sort-by :orderid (sales-by-year)))
   (pt (popular-products))
@@ -206,7 +245,7 @@
          :where
          [?e :shipper/companyname]] db)
 
-  (:product/productname northwind-schema)
+
   (d/transact! conn [{:order/shipvia "3"
                       :order/shippostalcode "51100"
                       :order/shipaddress "59 rue de l'Abbaye"
@@ -236,7 +275,7 @@
 
   (d/q '[:find  ?a ?v
          :where
-         
+
          [208 ?a ?v]] db)
   (clojure.pprint/print-table
    (map first (d/q '[:find   (pull ?e [*])
@@ -267,13 +306,13 @@
    (map first (d/q '[:find   (pull ?e [*])
                      :where
                      [?e :shipper/companyname]] db)))
-  
+
   ; orders
   (clojure.pprint/print-table
    (first (d/q '[:find   (pull ?e [*])
-                     :where
-                     [?e :order/customer]] db)))
-  
+                 :where
+                 [?e :order/customer]] db)))
+
   (clojure.pprint/print-table
    (first (d/q '[:find   (pull ?e [*])
                  :where
@@ -300,5 +339,4 @@
                       :order/shipregion "NULL"
                       :order/orderdate #inst "1996-07-04T05:00:00.000-00:00"
                       :order/shipcity "Reims"}])
-  #{}
-  )
+  #{})
