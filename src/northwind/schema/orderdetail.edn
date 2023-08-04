@@ -1,0 +1,23 @@
+{:orderdetail/orderdetail    {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :orderdetail/order          {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :orderdetail/discount       {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :orderdetail/product        {:db/valueType :db.type/ref
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :orderdetail/unitprice      {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}
+
+ :orderdetail/quantity       {:db/valueType :db.type/double
+                              :db/cardinality :db.cardinality/one
+                              :db.install/_attribute :db.part/db}}

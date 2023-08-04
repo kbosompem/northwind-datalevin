@@ -1,0 +1,11 @@
+{
+    "calva.jackInEnv": {},
+    "calva.replConnectSequences": [
+        {
+            "projectType": "deps.edn",
+            "name": "Northwind",
+            "autoSelectForJackIn": true,
+            "afterCLJReplJackInCode": "(require '[northwind.core] :reload) (in-ns 'northwind.core)",
+        }
+    ]
+}

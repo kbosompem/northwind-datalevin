@@ -22,6 +22,14 @@
                               :db/cardinality          :db.cardinality/one
                               :db.install/_attribute   :db.part/db}
 
+ :supplier/region           {:db/valueType             :db.type/string
+                             :db/cardinality          :db.cardinality/one
+                             :db.install/_attribute   :db.part/db}
+
+ :supplier/homepage          {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
  :supplier/contacttitle      {:db/valueType            :db.type/string
                               :db/cardinality          :db.cardinality/one
                               :db.install/_attribute   :db.part/db}

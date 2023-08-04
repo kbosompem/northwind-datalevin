@@ -3,14 +3,18 @@
                                 :db.install/_attribute  :db.part/db}
 
  :customer/customerid          {:db/valueType            :db.type/string
-                                :db/cardinality         :db.cardinality/one
-                                :db/unique              :db.unique/identity
-                                :db.install/_attribute  :db.part/db}
+                                :db/cardinality          :db.cardinality/one
+                                :db/unique               :db.unique/identity
+                                :db.install/_attribute   :db.part/db}
 
  :customer/city                {:db/valueType            :db.type/string
                                 :db/cardinality          :db.cardinality/one
                                 :db.install/_attribute   :db.part/db}
-
+ 
+ :customer/region              {:db/valueType            :db.type/string
+                                 :db/cardinality         :db.cardinality/one
+                                 :db.install/_attribute  :db.part/db}
+ 
  :customer/address             {:db/valueType            :db.type/string
                                 :db/cardinality          :db.cardinality/one
                                 :db.install/_attribute   :db.part/db}

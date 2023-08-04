@@ -48,4 +48,29 @@
 
  :employee/lastname          {:db/valueType            :db.type/string
                               :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/city              {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/phoneextension    {:db/valueType            :db.type/long
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/region           {:db/valueType            :db.type/string
+                             :db/cardinality          :db.cardinality/one
+                             :db.install/_attribute   :db.part/db}
+
+ :employee/postalcode        {:db/valueType            :db.type/string
+                              :db/cardinality          :db.cardinality/one
+                              :db.install/_attribute   :db.part/db}
+
+ :employee/country          {:db/valueType            :db.type/string
+                             :db/cardinality          :db.cardinality/one
+                             :db.install/_attribute   :db.part/db}
+
+ :employee/territories       {:db/valueType            :db.type/ref
+                              :db/cardinality          :db.cardinality/many
+                              :db/doc                  "A list of Employee Territories"
                               :db.install/_attribute   :db.part/db}}
